@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\CourseController;
 use App\Http\Controllers\TesteController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -10,3 +11,4 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/teste', [TesteController::class, 'getTeste']);
+Route::get('/course', [CourseController::class, 'getAllCourses']);
